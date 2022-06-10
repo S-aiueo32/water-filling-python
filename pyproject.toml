@@ -5,7 +5,7 @@ description = ""
 authors = ["S-aiueo32 <so.uchida@sansan.com>"]
 
 [tool.poetry.dependencies]
-python = ">=3.8,<3.11"
+python = ">=3.7,<3.11"
 opencv-python-headless = "*"
 scipy = "*"
 click = "*"
