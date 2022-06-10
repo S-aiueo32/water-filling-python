@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "water_filling"
+version = "0.1.0"
+description = ""
+authors = ["S-aiueo32 <so.uchida@sansan.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.11"
+opencv-python-headless = "^4.5.5"
+scipy = "^1.8.1"
+click = "^8.1.3"
+
+[tool.poetry.dev-dependencies]
+jupyterlab = "^3.4.2"
+matplotlib = "^3.5.2"
+tqdm = "^4.64.0"
+mypy = "^0.960"
+black = {version = "^22.3.0", allow-prereleases = true}
+
+[tool.poetry.scripts]
+water-filling = "water_filling.cli:cmd"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
