@@ -14,7 +14,7 @@ def cmd(input: str, output: str | None):  # type: ignore
     from .jung_2019 import WaterFilling
 
     input: Path = Path(input)  # type: ignore
-    output: Path = output or input.with_stem(f"{input.stem}_filled")  # type: ignore
+    output: Path = output or input.with_name(f"{input.stem}_filled{input.suffix}")  # type: ignore
 
     water_filling = WaterFilling()
 
